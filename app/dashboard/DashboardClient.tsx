@@ -184,7 +184,7 @@ export default function DashboardClient({ userId, email }: Props) {
         </div>
 
         <footer className={styles.footer}>
-          © {new Date().getFullYear()} TogetherWeFeel (TWF)
+          © {new Date().getFullYear()} @TogetherWeFear (TWF)
         </footer>
       </main>
     </div>
