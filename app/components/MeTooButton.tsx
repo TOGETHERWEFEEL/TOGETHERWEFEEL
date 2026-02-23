@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { createClient } from '@/lib/supabase/client';
+import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 
 type Props = {
   postId: string;
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function MeTooButton({ postId, userId, onUnlocked }: Props) {
-  const supabase = createClient();
+  const supabase = createSupabaseBrowserClient();;
 
   const [loading, setLoading] = useState(false);
   const [hasMeToo, setHasMeToo] = useState(false);

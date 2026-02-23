@@ -12,9 +12,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <Link href="/login" style={signInBtn}>
-          Sign in
-        </Link>
+        
       </header>
 
       <section style={hero}>
