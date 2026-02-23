@@ -1,0 +1,151 @@
+.page {
+  padding: 28px 28px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.brandName {
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.tagline {
+  opacity: 0.7;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.signIn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin: 10px auto 60px;
+  max-width: 900px;
+}
+
+.headline {
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+
+.subtext {
+  opacity: 0.8;
+  margin: 0 auto 18px;
+  max-width: 820px;
+  line-height: 1.6;
+}
+
+.disclaimer {
+  opacity: 0.75;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 780px;
+  margin: 0 auto 26px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Examples */
+.examplesTitle {
+  font-size: 22px;
+  margin: 0 0 18px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 900px) {
+  .cardsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+/* Cards */
+.card {
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  background: rgba(0, 0, 0, 0.04);
+  min-height: 250px;
+}
+
+.cardTitle {
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.bullets {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+.note {
+  margin: 0 0 14px;
+  opacity: 0.85;
+}
+
+.relateBtn {
+  border: none;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 800;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* Alignment helpers (optional) */
+.cardLeft {
+  justify-self: start;
+}
+.cardCenter {
+  justify-self: center;
+}
+.cardRight {
+  justify-self: end;
+}
